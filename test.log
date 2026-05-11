@@ -1,0 +1,1377 @@
+
+#   Failed test 'inet allow all'
+#   at access.t line 89.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet allow unix'
+#   at access.t line 90.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet deny unix'
+#   at access.t line 92.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet6 allow all'
+#   at access.t line 96.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet6 allow unix'
+#   at access.t line 97.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet6 deny unix'
+#   at access.t line 99.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'unix allow all'
+#   at access.t line 103.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'unix allow unix'
+#   at access.t line 104.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'unix deny all'
+#   at access.t line 105.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:403 Forbidden)'
+
+#   Failed test 'unix deny unix'
+#   at access.t line 106.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:403 Forbidden)'
+# Looks like you failed 10 tests of 14.
+access.t ...... 
+1..14
+not ok 1 - inet allow all
+not ok 2 - inet allow unix
+ok 3 - inet deny all
+not ok 4 - inet deny unix
+not ok 5 - inet6 allow all
+not ok 6 - inet6 allow unix
+ok 7 - inet6 deny all
+not ok 8 - inet6 deny unix
+not ok 9 - unix allow all
+not ok 10 - unix allow unix
+not ok 11 - unix deny all
+not ok 12 - unix deny unix
+ok 13 - no alerts
+ok 14 - no sanitizer errors
+Dubious, test returned 10 (wstat 2560, 0xa00)
+Failed 10/14 subtests 
+
+#   Failed test 'wrong type'
+#   at charset.t line 94.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html; charset=utf-8
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:text/foo\x0d)'
+
+#   Failed test 'charset_types'
+#   at charset.t line 95.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html; charset=utf-8
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:text/foo; charset=utf-8)'
+
+#   Failed test 'charset_types any'
+#   at charset.t line 96.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html; charset=utf-8
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:text/plain; charset=utf-8)'
+
+#   Failed test 'recode'
+#   at charset.t line 99.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html; charset=A
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Y{99})'
+
+#   Failed test 'override charset'
+#   at charset.t line 100.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:14 GMT
+# Content-Type: text/html; charset=B
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:X{99})'
+# Looks like you failed 5 tests of 9.
+charset.t ..... 
+1..9
+ok 1 - charset indicated
+not ok 2 - wrong type
+not ok 3 - charset_types
+not ok 4 - charset_types any
+ok 5 - variables
+not ok 6 - recode
+not ok 7 - override charset
+ok 8 - no alerts
+ok 9 - no sanitizer errors
+Dubious, test returned 5 (wstat 1280, 0x500)
+Failed 5/9 subtests 
+empty_gif.t ... 
+1..6
+ok 1 - empty gif
+ok 2 - get content type
+ok 3 - head content type
+ok 4 - put
+ok 5 - no alerts
+ok 6 - no sanitizer errors
+ok
+
+#   Failed test 'default index'
+#   at index.t line 107.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:X-URI: /index.html.*body)'
+
+#   Failed test 'redirect'
+#   at index.t line 109.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:X-URI: /re.html.*rebody)'
+
+#   Failed test 'many'
+#   at index.t line 111.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:X-URI: /many/many.html.*manybody)'
+
+#   Failed test 'var'
+#   at index.t line 112.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:X-URI: /var/localhost.html.*varbody)'
+
+#   Failed test 'var 2'
+#   at index.t line 113.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:X-URI: /va2/localhost.html.*varbody)'
+
+#   Failed test 'var with redirect'
+#   at index.t line 114.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:X-URI: /localhost.html.*varbody)'
+
+#   Failed test 'not found'
+#   at index.t line 117.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'not found log off'
+#   at index.t line 118.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'not a directory'
+#   at index.t line 120.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'log_not_found off'
+#   at index.t line 125.
+#                   '2026/05/11 15:53:15 [error] 32032#0: *10 "/tmp/nginx-test-Me1ts9BXSF/not_found/off/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET /not_found/off/ HTTP/1.0", host: "localhost"
+# '
+#           matches '(?^:error)'
+# Looks like you failed 10 tests of 16.
+index.t ....... 
+1..16
+not ok 1 - default index
+ok 2 - no index
+not ok 3 - redirect
+ok 4 - redirect loop
+not ok 5 - many
+not ok 6 - var
+not ok 7 - var 2
+not ok 8 - var with redirect
+not ok 9 - not found
+not ok 10 - not found log off
+ok 11 - directory access denied
+not ok 12 - not a directory
+ok 13 - log_not_found
+not ok 14 - log_not_found off
+ok 15 - no alerts
+ok 16 - no sanitizer errors
+Dubious, test returned 10 (wstat 2560, 0xa00)
+Failed 10/16 subtests 
+
+#   Failed test 'echo no argument'
+#   at ssi.t line 135.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^X\(none\)X$)'
+
+#   Failed test 'empty argument'
+#   at ssi.t line 136.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XX$)'
+
+#   Failed test 'argument'
+#   at ssi.t line 137.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XtestX$)'
+
+#   Failed test 'argument 2'
+#   at ssi.t line 138.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XtestX$)'
+
+#   Failed test 'argument 3'
+#   at ssi.t line 139.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XtestX$)'
+
+#   Failed test 'argument 4'
+#   at ssi.t line 140.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XtestX$)'
+
+#   Failed test 'argument 5'
+#   at ssi.t line 141.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XtestX$)'
+
+#   Failed test 'argument via include'
+#   at ssi.t line 144.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XXtestXX$)'
+
+#   Failed test 'set'
+#   at ssi.t line 146.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XtestX$)'
+
+#   Failed test 'echo encoding none'
+#   at ssi.t line 148.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^X<test>X$)'
+
+#   Failed test 'echo encoding url'
+#   at ssi.t line 151.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^X%3Ctest%3EX$)'
+
+#   Failed test 'echo encoding entity'
+#   at ssi.t line 154.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^X&lt;test&gt;X$)'
+
+#   Failed test 'args only subrequest'
+#   at ssi.t line 160.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XX$)'
+
+#   Failed test 'args was in main request'
+#   at ssi.t line 162.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XX$)'
+
+#   Failed test 'empty with postpone_output 0'
+#   at ssi.t line 179.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^ms:HTTP.*XX)'
+
+#   Failed test 'escaped in path'
+#   at ssi.t line 184.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XXtestXX$)'
+
+#   Failed test 'escaped question in path'
+#   at ssi.t line 189.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^m:^XSEE-THISX$)'
+
+#   Failed test 'escaped query separator'
+#   at ssi.t line 191.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'custom header'
+#   at ssi.t line 203.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:X-Var: x.+, \d\d-.+-\d{4} \d\d:\d\d:\d\d .+x)'
+
+#   Failed test 'default header'
+#   at ssi.t line 204.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:X-Var: x.+, \d\d-.+-\d{4} \d\d:\d\d:\d\d .+x)'
+
+#   Failed test 'custom ssi'
+#   at ssi.t line 206.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:x.+, \d\d:\d\d:\d\dx)'
+
+#   Failed test 'default ssi'
+#   at ssi.t line 208.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:15 GMT
+# Content-Type: text/html
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:x.+, \d\d-.+-\d{4} \d\d:\d\d:\d\d .+x)'
+# Looks like you failed 22 tests of 32.
+ssi.t ......... 
+1..32
+not ok 1 - echo no argument
+not ok 2 - empty argument
+not ok 3 - argument
+not ok 4 - argument 2
+not ok 5 - argument 3
+not ok 6 - argument 4
+not ok 7 - argument 5
+not ok 8 - argument via include
+not ok 9 - set
+not ok 10 - echo encoding none
+not ok 11 - echo encoding url
+not ok 12 - echo encoding entity
+not ok 13 - args only subrequest
+not ok 14 - args was in main request
+ok 15 - cleared headers
+ok 16 - cleared headers from proxy
+ok 17 - empty with ssi
+ok 18 - empty without ssi
+ok 19 - empty with proxy
+ok 20 - empty with proxy cached
+not ok 21 - empty with postpone_output 0
+not ok 22 - escaped in path
+not ok 23 - escaped question in path
+not ok 24 - escaped query separator
+ok 25 - no ssi
+ok 26 - no format
+not ok 27 - custom header
+not ok 28 - default header
+not ok 29 - custom ssi
+not ok 30 - default ssi
+ok 31 - no alerts
+ok 32 - no sanitizer errors
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 22/32 subtests 
+ssl.t ......... 
+1..23
+ok 1 - session
+ok 2 - session reused
+ok 3 - CN
+ok 4 - CN inner
+ok 5 - session timeout
+ok 6 - session id
+ok 7 - session id reused
+ok 8 - session id no ssl
+ok 9 - cipher
+ok 10 - ciphers
+ok 11 - client verify
+ok 12 - protocol
+ok 13 - issuer
+ok 14 - subject
+ok 15 - time
+ok 16 - request body chunked
+ok 17 - pipelined requests
+ok 18 - ssl unexpected eof
+ok 19 - ssl shutdown on lingering close
+ok 20 - log ssl variable on lingering close
+ok 21 - no crit
+ok 22 - no alerts
+ok 23 - no sanitizer errors
+ok
+
+#   Failed test 'unlimited passed'
+#   at limit_conn.t line 115.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+# Looks like you failed 1 test of 10.
+limit_conn.t .. 
+1..10
+ok 1 - rejected
+ok 2 - rejected different location
+ok 3 - passed different zone
+ok 4 - passed
+ok 5 - limit_conn_status
+ok 6 - limit_conn_log_level
+not ok 7 - unlimited passed
+ok 8 - limited rejected
+ok 9 - no alerts
+ok 10 - no sanitizer errors
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/10 subtests 
+
+#   Failed test 'normal crypt'
+#   at auth_basic.t line 92.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'crypt $1$ (md5)'
+#   at auth_basic.t line 95.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'crypt $1$ broken'
+#   at auth_basic.t line 98.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'apr1 md5'
+#   at auth_basic.t line 103.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'plain password'
+#   at auth_basic.t line 104.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'ssha'
+#   at auth_basic.t line 105.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'sha'
+#   at auth_basic.t line 106.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'apr1 md5 broken'
+#   at auth_basic.t line 113.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'ssha broken 1'
+#   at auth_basic.t line 114.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'ssha broken 2'
+#   at auth_basic.t line 115.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'sha broken 1'
+#   at auth_basic.t line 116.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'sha broken 2'
+#   at auth_basic.t line 117.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'no newline'
+#   at auth_basic.t line 119.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'not found'
+#   at auth_basic.t line 120.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:401 Unauthorized)'
+
+#   Failed test 'inner off'
+#   at auth_basic.t line 121.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+
+#   Failed test 'user file variable'
+#   at auth_basic.t line 123.
+#                   'HTTP/1.1 500 Internal Server Error
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 15:53:20 GMT
+# Content-Type: text/html
+# Content-Length: 177
+# Connection: close
+# 
+# <html>
+# <head><title>500 Internal Server Error</title></head>
+# <body>
+# <center><h1>500 Internal Server Error</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:SEETHIS)'
+# Looks like you failed 16 tests of 27.
+auth_basic.t .. 
+1..27
+ok 1 - rejects unathorized
+not ok 2 - normal crypt
+ok 3 - normal wrong
+not ok 4 - crypt $1$ (md5)
+ok 5 - crypt $1$ wrong
+not ok 6 - crypt $1$ broken
+not ok 7 - apr1 md5
+not ok 8 - plain password
+not ok 9 - ssha
+not ok 10 - sha
+ok 11 - apr1 md5 wrong
+ok 12 - plain wrong
+ok 13 - ssha wrong
+ok 14 - sha wrong
+not ok 15 - apr1 md5 broken
+not ok 16 - ssha broken 1
+not ok 17 - ssha broken 2
+not ok 18 - sha broken 1
+not ok 19 - sha broken 2
+not ok 20 - no newline
+not ok 21 - not found
+not ok 22 - inner off
+not ok 23 - user file variable
+ok 24 - user file variable not found
+ok 25 - user file variable bad value
+ok 26 - no alerts
+ok 27 - no sanitizer errors
+Dubious, test returned 16 (wstat 4096, 0x1000)
+Failed 16/27 subtests 
+
+Test Summary Report
+-------------------
+access.t    (Wstat: 2560 (exited 10) Tests: 14 Failed: 10)
+  Failed tests:  1-2, 4-6, 8-12
+  Non-zero exit status: 10
+charset.t   (Wstat: 1280 (exited 5) Tests: 9 Failed: 5)
+  Failed tests:  2-4, 6-7
+  Non-zero exit status: 5
+index.t     (Wstat: 2560 (exited 10) Tests: 16 Failed: 10)
+  Failed tests:  1, 3, 5-10, 12, 14
+  Non-zero exit status: 10
+ssi.t       (Wstat: 5632 (exited 22) Tests: 32 Failed: 22)
+  Failed tests:  1-14, 21-24, 27-30
+  Non-zero exit status: 22
+limit_conn.t (Wstat: 256 (exited 1) Tests: 10 Failed: 1)
+  Failed test:  7
+  Non-zero exit status: 1
+auth_basic.t (Wstat: 4096 (exited 16) Tests: 27 Failed: 16)
+  Failed tests:  2, 4, 6-10, 15-23
+  Non-zero exit status: 16
+Files=8, Tests=137,  6 wallclock secs ( 0.04 usr  0.01 sys +  1.58 cusr  0.29 csys =  1.92 CPU)
+Result: FAIL
