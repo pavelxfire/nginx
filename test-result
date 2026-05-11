@@ -1,0 +1,552 @@
+/root/nginx-tests/http_method.t ...... ok
+/root/nginx-tests/msie_refresh.t ..... ok
+/root/nginx-tests/proxy_available.t .. ok
+
+#   Failed test 'inet allow all'
+#   at /root/nginx-tests/access.t line 89.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet allow unix'
+#   at /root/nginx-tests/access.t line 90.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet deny unix'
+#   at /root/nginx-tests/access.t line 92.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet6 allow all'
+#   at /root/nginx-tests/access.t line 96.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet6 allow unix'
+#   at /root/nginx-tests/access.t line 97.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'inet6 deny unix'
+#   at /root/nginx-tests/access.t line 99.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'unix allow all'
+#   at /root/nginx-tests/access.t line 103.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'unix allow unix'
+#   at /root/nginx-tests/access.t line 104.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:404 Not Found)'
+
+#   Failed test 'unix deny all'
+#   at /root/nginx-tests/access.t line 105.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:403 Forbidden)'
+
+#   Failed test 'unix deny unix'
+#   at /root/nginx-tests/access.t line 106.
+#                   'HTTP/1.1 502 Bad Gateway
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 157
+# Connection: close
+# 
+# <html>
+# <head><title>502 Bad Gateway</title></head>
+# <body>
+# <center><h1>502 Bad Gateway</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:403 Forbidden)'
+# Looks like you failed 10 tests of 14.
+/root/nginx-tests/access.t ........... 
+Dubious, test returned 10 (wstat 2560, 0xa00)
+Failed 10/14 subtests 
+
+#   Failed test 'good expires'
+#   at /root/nginx-tests/headers.t line 136.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /t1
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Cache-Control)'
+
+#   Failed test 'good add_header'
+#   at /root/nginx-tests/headers.t line 137.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /t1
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:X-URI)'
+
+#   Failed test 'expires epoch'
+#   at /root/nginx-tests/headers.t line 149.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /epoch
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires:.*1970)'
+
+#   Failed test 'expires max'
+#   at /root/nginx-tests/headers.t line 150.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /max
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires:.*2037)'
+
+#   Failed test 'expires access'
+#   at /root/nginx-tests/headers.t line 152.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /access
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:max-age=2048)'
+
+#   Failed test 'expires inner'
+#   at /root/nginx-tests/headers.t line 153.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /access_inner
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:max-age=2048)'
+
+#   Failed test 'expires negative'
+#   at /root/nginx-tests/headers.t line 154.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /negative
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:no-cache)'
+
+#   Failed test 'expires daily'
+#   at /root/nginx-tests/headers.t line 155.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /daily
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires:.*:33 GMT)'
+
+#   Failed test 'expires modified'
+#   at /root/nginx-tests/headers.t line 156.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /modified
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:max-age=204.)'
+
+#   Failed test 'expires modified proxy'
+#   at /root/nginx-tests/headers.t line 160.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /modified/proxy
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires: Mon, 28 Sep 1970 06:34:08 GMT)'
+
+#   Failed test 'expires var epoch'
+#   at /root/nginx-tests/headers.t line 165.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires:.*1970)'
+
+#   Failed test 'expires var max'
+#   at /root/nginx-tests/headers.t line 166.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires:.*2037)'
+
+#   Failed test 'expires var access'
+#   at /root/nginx-tests/headers.t line 168.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:max-age=2048)'
+
+#   Failed test 'expires var inner'
+#   at /root/nginx-tests/headers.t line 169.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var_inner
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:max-age=2048)'
+
+#   Failed test 'expires var negative'
+#   at /root/nginx-tests/headers.t line 170.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:no-cache)'
+
+#   Failed test 'expires var daily'
+#   at /root/nginx-tests/headers.t line 171.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:Expires:.*:33 GMT)'
+
+#   Failed test 'expires var modified'
+#   at /root/nginx-tests/headers.t line 172.
+#                   'HTTP/1.1 403 Forbidden
+# Server: nginx/1.31.0
+# Date: Mon, 11 May 2026 16:20:55 GMT
+# Content-Type: text/html
+# Content-Length: 153
+# Connection: close
+# X-Always: /var_modified
+# 
+# <html>
+# <head><title>403 Forbidden</title></head>
+# <body>
+# <center><h1>403 Forbidden</h1></center>
+# <hr><center>nginx/1.31.0</center>
+# </body>
+# </html>
+# '
+#     doesn't match '(?^:max-age=204.)'
+# Looks like you failed 17 tests of 30.
+/root/nginx-tests/headers.t .......... 
+Dubious, test returned 17 (wstat 4352, 0x1100)
+Failed 17/30 subtests 
+
+Test Summary Report
+-------------------
+/root/nginx-tests/access.t         (Wstat: 2560 (exited 10) Tests: 14 Failed: 10)
+  Failed tests:  1-2, 4-6, 8-12
+  Non-zero exit status: 10
+/root/nginx-tests/headers.t        (Wstat: 4352 (exited 17) Tests: 30 Failed: 17)
+  Failed tests:  1-2, 9-10, 12-19, 21-25
+  Non-zero exit status: 17
+Files=5, Tests=61,  4 wallclock secs ( 0.03 usr  0.01 sys +  0.30 cusr  0.14 csys =  0.48 CPU)
+Result: FAIL
