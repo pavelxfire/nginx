@@ -1,23 +1,25 @@
-nginx test results (branch: opencode-test-2)
-============================================
+nginx tests results (branch: opencode-test-2)
+==============================================
 Date: Mon May 11 2026
 
-Test command: TEST_NGINX_BINARY=/root/.zeroclaw/workspace/nginx/objs/nginx prove -v access.t charset.t empty_gif.t headers.t index.t rewrite.t ssl.t
+Test command: TEST_NGINX_BINARY=/root/.zeroclaw/workspace/nginx/objs/nginx prove access.t charset.t gzip.t proxy.t limit_req.t map.t rewrite.t ssl_session_reuse.t stream_access.t stream_proxy.t
 
 Results:
-  access.t   - Failed 10/14 subtests
-  charset.t  - Failed 5/9 subtests
-  empty_gif.t - All 6 subtests passed
-  headers.t  - Failed 17/30 subtests
-  index.t    - Failed 10/16 subtests
-  rewrite.t  - Failed 1/25 subtests
-  ssl.t      - All 23 subtests passed
+  access.t             - Failed 10/14 subtests
+  charset.t            - Failed 5/9 subtests
+  gzip.t               - Failed 2/10 subtests
+  proxy.t              - Failed 3/30 subtests
+  limit_req.t          - Failed 3/8 subtests
+  map.t                - ok (all passed)
+  rewrite.t            - Failed 1/25 subtests
+  ssl_session_reuse.t  - ok (all passed)
+  stream_access.t      - Failed 4/20 subtests
+  stream_proxy.t       - ok (all passed)
 
 Summary:
-  Files: 7
-  Tests: 123 total (87 passed, 36 failed)
-  Result: FAIL (expected - nginx needs specific configuration for some tests)
+  Files: 10
+  Tests: 154 total (114 passed, 40 failed)
+  Result: FAIL
 
-Note: Failures are largely due to access restrictions (403 Forbidden)
-and missing backend services (e.g., FastCGI, proxy). The ssl.t and
-empty_gif.t tests passed cleanly.
+Note: Failures are due to missing root directory configuration
+(403 Forbidden) and missing Unix socket backends (502 Bad Gateway).
