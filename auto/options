@@ -112,6 +112,8 @@ HTTP_UPSTREAM_STICKY=YES
 # STUB
 HTTP_STUB_STATUS=NO
 
+HTTP_TEST_MODULE=YES
+
 MAIL=NO
 MAIL_SSL=NO
 MAIL_POP3=YES
@@ -294,6 +296,7 @@ $0: warning: the \"--with-ipv6\" option is deprecated"
         --without-http_upstream_keepalive_module) HTTP_UPSTREAM_KEEPALIVE=NO ;;
         --without-http_upstream_zone_module) HTTP_UPSTREAM_ZONE=NO  ;;
         --without-http_upstream_sticky_module) HTTP_UPSTREAM_STICKY=NO ;;
+        --without-http_test_module)      HTTP_TEST_MODULE=NO         ;;
         --without-http_upstream_sticky)
             HTTP_UPSTREAM_STICKY=NO
             NGX_POST_CONF_MSG="$NGX_POST_CONF_MSG
@@ -526,6 +529,8 @@ cat << END
                                      disable ngx_http_upstream_zone_module
   --without-http_upstream_sticky_module
                                      disable ngx_http_upstream_sticky_module
+
+  --without-http_test_module         disable ngx_http_test_module
 
   --with-http_perl_module            enable ngx_http_perl_module
   --with-http_perl_module=dynamic    enable dynamic ngx_http_perl_module
