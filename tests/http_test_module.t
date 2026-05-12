@@ -16,7 +16,7 @@ use Test::More;
 
 BEGIN { use FindBin; chdir($FindBin::Bin); }
 
-use lib '../lib';
+use lib 'lib';
 use Test::Nginx;
 
 ###############################################################################
@@ -24,7 +24,7 @@ use Test::Nginx;
 select STDERR; $| = 1;
 select STDOUT; $| = 1;
 
-my $t = Test::Nginx->new()->has(qw/http test_module/);
+my $t = Test::Nginx->new()->has(qw/http/);
 
 $t->plan(3)->write_file_expand('nginx.conf', <<'EOF');
 
@@ -51,10 +51,12 @@ EOF
 
 $t->run();
 
-like($t->read_file('error.log'), qr/\[notice\] .* hello/,
-    'test_module on logs hello');
+http_get('/');
 
 $t->stop();
+
+like($t->read_file('error.log'), qr/\[notice\] .* hello/,
+    'test_module on logs hello');
 
 ###############################################################################
 
@@ -86,10 +88,12 @@ EOF
 
 $t->run();
 
-unlike($t->read_file('error.log'), qr/\[notice\] .* hello/,
-    'test_module off does not log hello');
+http_get('/');
 
 $t->stop();
+
+unlike($t->read_file('error.log'), qr/\[notice\] .* hello/,
+    'test_module off does not log hello');
 
 ###############################################################################
 
@@ -119,7 +123,11 @@ EOF
 
 $t->run();
 
+http_get('/');
+
+$t->stop();
+
 unlike($t->read_file('error.log'), qr/\[notice\] .* hello/,
-    'test_module default (not specified) does not log hello');
+    'test_module default does not log hello');
 
 ###############################################################################

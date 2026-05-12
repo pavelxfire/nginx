@@ -87,6 +87,7 @@ ngx_http_test_init(ngx_conf_t *cf)
 {
     ngx_http_handler_pt        *h;
     ngx_http_core_main_conf_t  *cmcf;
+    ngx_http_test_loc_conf_t   *tlcf;
 
     cmcf = ngx_http_conf_get_module_main_conf(cf, ngx_http_core_module);
 
@@ -96,6 +97,11 @@ ngx_http_test_init(ngx_conf_t *cf)
     }
 
     *h = ngx_http_test_handler;
+
+    tlcf = ngx_http_conf_get_module_loc_conf(cf, ngx_http_test_module);
+    if (tlcf && tlcf->enable == 1) {
+        ngx_log_error(NGX_LOG_NOTICE, cf->log, 0, "hello");
+    }
 
     return NGX_OK;
 }
