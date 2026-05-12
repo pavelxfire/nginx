@@ -111,6 +111,7 @@ HTTP_UPSTREAM_STICKY=YES
 
 # STUB
 HTTP_STUB_STATUS=NO
+HTTP_TEST=NO
 
 MAIL=NO
 MAIL_SSL=NO
@@ -308,6 +309,7 @@ use the \"--without-http_upstream_sticky_module\" option instead"
 
         # STUB
         --with-http_stub_status_module)  HTTP_STUB_STATUS=YES       ;;
+        --with-http_test_module)         HTTP_TEST=YES              ;;
 
         --with-mail)                     MAIL=YES                   ;;
         --with-mail=dynamic)             MAIL=DYNAMIC               ;;
